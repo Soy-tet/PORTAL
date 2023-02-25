@@ -3,8 +3,6 @@
     include("./SQL/Function/chack_session.php");
     include('./SQL/CONNECTION/conn-INDEX.php');
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,7 +83,7 @@
                 <button class="button-37" role="button">browse all +100</button>
 <!-- CARD NEWS  -->
 <p class="btn-best">News</p>
-                                <div class="plan-card">
+                <div class="plan-card">
                     <h2>Premuim Plan<span>For business services</span></h2>
                     <div class="etiquet-price">
                         <p>254.99</p>
@@ -119,6 +117,7 @@
         <div class="container_center">
             <div class="pano_content">
                 <img src=".\IMG\turis.jpeg" alt="">
+                <p>afslasfaffdsfshjfsfh</p>
             </div>
         </div>
         <!-- SIDE RIGHT CONTENT -->

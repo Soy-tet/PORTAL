@@ -20,7 +20,7 @@ if(	isset($_POST["username"])&&
             $_SESSION['username'] = $username;
 			$chackRef = $_GET['ref'];
 			if(!isset($chackRef)){
-				header('location: \PORTAL\ELearning-Full_Stack\index.php');
+				header('location: \PORTAL\PORTAL\index.php');
 			}else{
 				header('location: '.$_GET['ref']);
 			}

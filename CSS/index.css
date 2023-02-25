@@ -1,31 +1,15 @@
 body{
     margin: 0;
-    padding: 0%;
+    padding: 0;
     background-color: rgb(221, 221, 221);
-}
-.whole{
-    width: 100vw;
-    height: 100vh;
-    border-radius: 10px;
-    display: block;
-    margin: auto auto;
-    justify-content: center;
-    align-items: center;
-	position: fixed;
-                /* background-color: #38d39f;
-                border-radius: 29px;
-                top: 5vh;
-                left: 5vw;
-                box-shadow:  4px 4px 5px #aaaaaa,
-                        -4px -4px 5px #ffffff; */
+    overflow: hidden;
 }
 /* NAV  */
     .container-nav{
-        width: 100%;
+        width: 100vw;
         height: 40px;
         display: flex;
         justify-content: space-between;
-        margin: auto auto;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         position: relative;
         background-color: white;
@@ -62,24 +46,19 @@ body{
 /* container */
 .container{
     display: flex;
+    padding: 0%;
+    margin: 0px;
 }
 .container .container_left{
     width: 20vw;
-    height: 100vh;
-                 /* height: 85.5vh; */
-    background-color: beige;
-        /* From https://css.glass */
+    height: 98vh;
     background: rgba(255, 255, 255, 0.17);
-    border-radius: 0px 16px 0px 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.3px);
     -webkit-backdrop-filter: blur(3.3px);
     border: 1px solid rgba(255, 255, 255, 0.99);
-    max-width: 50vw;
     position: sticky;
-    top: 2vh;
-    z-index: 5;
-    border-radius: 0px 0px 0px 30px;
+    overflow: hidden;
 }
 .btn-best{
     height: 20px;
@@ -99,26 +78,22 @@ body{
     text-overflow: ellipsis;
 }
 .container .container_left ul h2 .top-team{
-    display: flex;
     color: rgb(4, 28, 73);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 0%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: medium;
+    margin-top: 0;
 }
 .container .container_left ul{
-    gap: 5px;
-    display: grid;
+    display: block;
+    margin: -15px -30px;
 }
 .container .container_left ul li{
     display: flex;
-    width: 100%;
-    max-width: 90%;
-    padding-left: 0px;
     justify-content: space-between;
     border-radius: 10px;
-    /* border: 3px solid rgba(255, 255, 255, 0.99); */
 }
 .container .container_left ul li:hover{
     background-color: #00044607;
@@ -154,7 +129,7 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
     color: rgba(13, 70, 43, 0.534);
-    margin: auto;
+    /* margin: auto; */
 }
 .container .container_left ul li p{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -183,7 +158,6 @@ body{
   font-weight: 400;
   outline: none;
   outline: 0;
-  padding: 10px 25px;
   text-align: center;
   transform: translateY(0);
   transition: transform 150ms, box-shadow 150ms;
@@ -208,8 +182,7 @@ body{
 /* CARD PREMUIM PLAN  */
             .plan-card {
                 background: #fff;
-                width: 15vw;
-                margin: auto;
+                width: 13vw;
                 padding-left: 1rem;
                 padding-right: 1rem;
                 padding-top: 10px;
@@ -321,7 +294,7 @@ body{
                 margin-bottom: .2rem;
                 display: flex;
                 align-items: center;
-                gap: .5rem;
+                gap: 10px;
             }
             
             .benefits-list ul li svg {
@@ -377,17 +350,17 @@ body{
 /* Center SIDE  */
 .pano_content{
     width: 65vw;
-    height: 30vh;
+    height: 400vh;
     padding: 0;
     position: relative;
+    overflow-y: scroll;
 }
 .pano_content img{
     object-fit: cover;
-    height: 100%;
+    height: 30vh;
     width: 100%;
-    object-position:center -5vh;
+    object-position:center;
     -o-object-fit: cover;
-    
 }
 /* <!-- SIDE RIGHT CONTENT --> */
 .container_right{
@@ -407,4 +380,5 @@ body{
     top: 2vh;
     z-index: 5;
     border-radius: 0px 0px 0px 30px;
+    overflow: hidden;
 }
