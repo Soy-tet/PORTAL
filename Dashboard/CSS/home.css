@@ -1,0 +1,98 @@
+body{
+    overflow: hidden;
+    overflow-y: hidden;
+    height: 200vh;
+}
+/* TABLE SHOW DATABASE */
+table{
+    border-collapse: collapse;
+    margin: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: 1px solid black;
+    overflow-y: auto;
+    width: 75vw;
+}
+.table-wrapper{
+    margin: auto;
+    max-height: 200vh;
+    max-width: 75vw;
+    overflow: scroll;
+    /* overflow-x: hidden; */
+
+}
+td, th{
+    /* border: 1px solid #dddddd ; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.tr td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 40px;
+    min-width: 5px;
+}
+tr td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #dddddd;
+}
+.tr:nth-child(even) {background: #cccccca5}
+.tr:nth-child(odd) {background: #FFF}
+.tr:hover:nth-child(even) {background: #cccccca5}
+.tr:hover:nth-child(odd) {background: #FFF}
+td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    padding: 8px 0px;
+}
+.tr:hover{
+    cursor: pointer;
+    background-color: #dddddd1c;
+}
+td:hover{
+    cursor: pointer;
+    background-color: #ffdc14c8;
+}
+.header-table{
+    background-color: #009879;
+    position: sticky;
+    top: -1px;
+    min-width: 5px;
+}
+.remove{
+    max-width: 30px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.header-table th{
+    color: white;
+    max-width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family:'Courier New', Courier, monospace;
+}
+#new{
+    cursor: pointer;
+    padding: 3px 20px;
+}
+li form input{
+    border-style: none;
+    background-color: #00336600;
+}
+ul li a{
+    display: flex;
+    /* display: none; */
+}
+.container_list_lesson{
+    display: flex;
+    
+}

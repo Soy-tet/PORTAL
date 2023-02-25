@@ -1,0 +1,410 @@
+body{
+    margin: 0;
+    padding: 0%;
+    background-color: rgb(221, 221, 221);
+}
+.whole{
+    width: 100vw;
+    height: 100vh;
+    border-radius: 10px;
+    display: block;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+	position: fixed;
+                /* background-color: #38d39f;
+                border-radius: 29px;
+                top: 5vh;
+                left: 5vw;
+                box-shadow:  4px 4px 5px #aaaaaa,
+                        -4px -4px 5px #ffffff; */
+}
+/* NAV  */
+    .container-nav{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto auto;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        position: relative;
+        background-color: white;
+        z-index: 10;
+        margin: auto;
+                /* border-radius: 30px 30px 0px 0px; */
+    }
+    .container-nav .container-left{
+        display: flex;
+        padding-left: 20px;
+        margin: auto 0px;
+    }
+    .container-nav .container-left .icon{
+        font-size:larger;
+    }
+    .container-nav .container-left .navBar-head{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: medium;
+        margin-left: 5px;
+    }
+    .container-nav .container-right{
+        display: flex;
+        padding-right: 20px;
+        margin: auto 0px;
+    }
+    .container-nav .container-right .header{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-right: 20px;
+    }
+    .container-nav .container-right .icon-social{
+        font-size: larger;
+        margin-right: 30px;
+    }
+/* container */
+.container{
+    display: flex;
+}
+.container .container_left{
+    width: 20vw;
+    height: 100vh;
+                 /* height: 85.5vh; */
+    background-color: beige;
+        /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 0px 16px 0px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(255, 255, 255, 0.99);
+    max-width: 50vw;
+    position: sticky;
+    top: 2vh;
+    z-index: 5;
+    border-radius: 0px 0px 0px 30px;
+}
+.btn-best{
+    height: 20px;
+    width: 40px;
+    font-size: small;
+    justify-content: center;
+    border-radius: 30px;
+    display: flex;
+    margin: auto 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(235,12,200);
+    background: linear-gradient(90deg, rgba(235,12,200,1) 0%, rgba(250,146,0,1) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.99);
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container .container_left ul h2 .top-team{
+    display: flex;
+    color: rgb(4, 28, 73);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container .container_left ul{
+    gap: 5px;
+    display: grid;
+}
+.container .container_left ul li{
+    display: flex;
+    width: 100%;
+    max-width: 90%;
+    padding-left: 0px;
+    justify-content: space-between;
+    border-radius: 10px;
+    /* border: 3px solid rgba(255, 255, 255, 0.99); */
+}
+.container .container_left ul li:hover{
+    background-color: #00044607;
+    cursor: pointer;
+}
+.container .container_left ul li .container_icon_team{
+    display: flex;
+}
+.container .container_left ul li .container_icon_team img{
+    width: 2em;
+    height: 2em;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.container .container_left ul li .container_icon_team .team_des{
+    display: block;
+    width: 10vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+.container .container_left ul li .container_icon_team .team_des p{
+    font-size: medium;
+}
+.container .container_left ul li .container_icon_team .team_des .des{
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(13, 70, 43, 0.534);
+    margin: auto;
+}
+.container .container_left ul li p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+.container .container_left ul li h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    /* display: flex; */
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* CSS */
+.button-37 {
+  background-color: #13aa9d;
+  border: 1px solid #13aa9d;
+  border-radius: 4px;
+  /* box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0; */
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin:auto;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
+/* CARD PREMUIM PLAN  */
+            .plan-card {
+                background: #fff;
+                width: 15vw;
+                margin: auto;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                border-radius: 10px;
+                border-bottom: 4px solid #000446;
+                box-shadow: 0 6px 30px rgba(207, 212, 222, 0.3);
+                font-family: "Poppins", sans-serif;
+                margin-top: 10px;
+                background: rgba(255, 255, 255, 0.17);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(3.3px);
+                -webkit-backdrop-filter: blur(3.3px);
+                border: 1px solid rgba(255, 255, 255, 0.99);
+            }
+            @media (max-width: 1200px) {
+                .plan-card {
+                  width: 10vw;
+                }
+              }
+            .plan-card h2 {
+                margin-bottom: 15px;
+                font-size: 27px;
+                font-weight: 600;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+            .plan-card h2 span {
+                display: block;
+                margin-top: -4px;
+                color: #4d4d4d;
+                font-size: 12px;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+            .etiquet-price {
+                position: relative;
+                background: #fdbd4a;
+                width: 14.46vw;
+                margin-left: -0.65rem;
+                padding: .2rem 1.2rem;
+                border-radius: 5px 0 0 5px;
+            }
+            @media (max-width: 1200px) {
+                .etiquet-price {
+                    width: 10vw;
+                }
+              }
+            .etiquet-price p {
+                margin: 0;
+                padding-top: .4rem;
+                display: flex;
+                font-size: 1.9rem;
+                font-weight: 500;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+            .etiquet-price p:before {
+                content: "$";
+                margin-right: 5px;
+                font-size: 15px;
+                font-weight: 300;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+            .etiquet-price p:after {
+                content: "/ handle";
+                margin-left: 5px;
+                font-size: 15px;
+                font-weight: 300;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+            .etiquet-price div {
+                position: absolute;
+                bottom: -23px;
+                right: 0px;
+                width: 0;
+                height: 0;
+                border-top: 13px solid #c58102;
+                border-bottom: 10px solid transparent;
+                border-right: 13px solid transparent;
+                z-index: -6;
+            }
+            
+            .benefits-list {
+                margin-top: 16px;
+            }
+            
+            .benefits-list ul {
+                padding: 0;
+                font-size: 14px;
+            }
+            
+            .benefits-list ul li {
+                color: #4d4d4d;
+                list-style: none;
+                margin-bottom: .2rem;
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+            
+            .benefits-list ul li svg {
+                width: .9rem;
+                fill: currentColor;
+            }
+            
+            .benefits-list ul li span {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+            .button-get-plan {
+                display: flex;
+                justify-content: center;
+                margin-top: 1.2rem;
+            }
+            
+            .button-get-plan a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #000446;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: .8rem;
+                letter-spacing: .05rem;
+                font-weight: 500;
+                transition: all 0.3s ease;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+            .button-get-plan a:hover {
+                transform: translateY(-3%);
+                box-shadow: 0 3px 10px rgba(207, 212, 222, 0.9);
+            }
+            
+            .button-get-plan .svg-rocket {
+                margin-right: 10px;
+                width: .9rem;
+                fill: currentColor;
+            }
+            .btn-start{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+/* Center SIDE  */
+.pano_content{
+    width: 65vw;
+    height: 30vh;
+    padding: 0;
+    position: relative;
+}
+.pano_content img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position:center -5vh;
+    -o-object-fit: cover;
+    
+}
+/* <!-- SIDE RIGHT CONTENT --> */
+.container_right{
+    width: 15vw;
+    height: 100vh;
+                 /* height: 85.5vh; */
+    background-color: beige;
+        /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 0px 16px 0px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(255, 255, 255, 0.99);
+    max-width: 50vw;
+    position: sticky;
+    top: 2vh;
+    z-index: 5;
+    border-radius: 0px 0px 0px 30px;
+}

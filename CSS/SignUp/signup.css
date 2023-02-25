@@ -1,0 +1,50 @@
+
+body{
+    overflow: hidden;
+    justify-content: center;
+    margin: auto;
+}
+#input{
+    margin: auto auto;
+    width: 300px;
+    display: flex;
+    height: 30px;
+    font-size: 1em;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#submit{
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+    /* background-color:rgb(28, 215, 218); */
+    border-radius: 5px;
+}
+.login{
+    position: relative;
+    float: right;
+    margin-right: 0;
+    display: flex;
+}
+#login{
+    float: right;
+    margin-right: 100px;
+    width: 100px;
+    height: 20px;
+    margin-top: 10vh;
+}
+.signup{
+    padding-top: 20vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    justify-content: center;
+    display: flex;
+    margin-left: 200px;
+}
+p{
+    color: coral;
+}
