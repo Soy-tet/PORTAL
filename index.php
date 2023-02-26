@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/jpg" href="./ICON/other\favicon01.ico"/>
-    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/index2.css">
     <script src="https://kit.fontawesome.com/c90b4e63b2.js" crossorigin="anonymous"></script>
     <title>Knowlegde || Lesson</title>
 </head>
@@ -34,13 +34,13 @@
     <div class="container">
         <!-- SIDE Left BAR  -->
         <div class="container_left">
-            <ul>
+            <div>
                 <h2>
                     <!-- <img src=".\ICON\favicon.ico" alt=""> -->
                     <p class="btn-best">Best</p>
                     <p class="top-team">Top Super team</p>
                 </h2>
-                <li>
+                <div class="team">
                     <div class="container_icon_team">
                         <img src=".\ICON\AI\8-3tF7dmiYqxfHfnb.png" alt="">
                         <div class="team_des">
@@ -49,8 +49,8 @@
                         </div>
                     </div>
                     <h2>21k</h2>
-                </li>
-                <li>
+                </div>
+                <div class="team">
                     <div class="container_icon_team">
                         <img src=".\ICON\AI\8-6lSqkfgfPtJXqAB.png" alt="">
                         <div class="team_des">
@@ -59,8 +59,8 @@
                         </div>
                     </div>
                     <h2>21k</h2>
-                </li>
-                <li>
+                </div>
+                <div class="team">
                     <div class="container_icon_team">
                         <img src=".\ICON\AI\8-asUFJw29SCZIOBA.png" alt="">
                         <div class="team_des">
@@ -69,8 +69,8 @@
                         </div>
                     </div>
                     <h2>21k</h2>
-                </li>
-                <li>
+                </div>
+                <div class="team">
                     <div class="container_icon_team">
                         <img src=".\ICON\AI\8-cv3Pnd0C6ipOr79.png" alt="">
                         <div class="team_des">
@@ -79,10 +79,10 @@
                         </div>
                     </div>
                     <h2>21k</h2>
-                </li>
+                </div>
                 <button class="button-37" role="button">browse all +100</button>
 <!-- CARD NEWS  -->
-<p class="btn-best">News</p>
+<p class="btn-best2">News</p>
                 <div class="plan-card">
                     <h2>Premuim Plan<span>For business services</span></h2>
                     <div class="etiquet-price">
@@ -90,17 +90,17 @@
                         <div></div>
                     </div>
                     <div class="benefits-list">
-                        <ul>
-                            <li><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <div>
+                            <div class="benefits"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"></path>
-                                </svg><span>Analysis</span></li>
-                            <li><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                </svg><span>Analysis</span></div>
+                            <div class="benefits"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"></path>
-                                </svg><span>Consulting</span></li>
-                            <li><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                </svg><span>Consulting</span></div>
+                            <div class="benefits"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"></path>
-                                </svg><span>Facilitate</span></li>
-                        </ul>
+                                </svg><span>Facilitate</span></div>
+                        </div>
                     </div>
                     <div class="button-get-plan">
                         <a href="#">
@@ -111,14 +111,14 @@
                         </a>
                     </div>
                 </div>
-            </ul>
+            </div>
         </div>
         <!-- CENTER  -->
         <div class="container_center">
             <div class="pano_content">
                 <img src=".\IMG\turis.jpeg" alt="">
-                <p>afslasfaffdsfshjfsfh</p>
             </div>
+            <p>afslasfaffdsfshjfsfh</p>
         </div>
         <!-- SIDE RIGHT CONTENT -->
         <div class="container_right">
