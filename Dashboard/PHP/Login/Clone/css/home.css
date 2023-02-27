@@ -3,6 +3,9 @@ body{
     overflow-y: hidden;
     height: 200vh;
 }
+.global{
+    padding: 0px 10px;
+}
 /* TABLE SHOW DATABASE */
 table{
     border-collapse: collapse;
@@ -16,7 +19,7 @@ table{
 .table-wrapper{
     margin: auto;
     max-height: 100vh;
-    max-width: 76vw;
+    max-width: 80vw;
     overflow: hidden;
 }
 td, th{
@@ -85,6 +88,7 @@ li form input{
     border-style: none;
     background-color: #00336600;
 }
-.btn_new{
-    margin-left: 30vw;
+.btn_new5{
+    margin-top: 10vh ;
+    margin-bottom: 0px;
 }
