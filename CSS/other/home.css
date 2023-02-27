@@ -25,7 +25,6 @@ td, th{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
 }
 .tr td{
     white-space: nowrap;
@@ -76,15 +75,4 @@ tr .remove{
     overflow: hidden;
     text-overflow: ellipsis;
     font-family:'Courier New', Courier, monospace;
-}
-#new{
-    cursor: pointer;
-    padding: 3px 20px;
-}
-li form input{
-    border-style: none;
-    background-color: #00336600;
-}
-.btn_new{
-    margin-left: 30vw;
 }

@@ -114,6 +114,8 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom: 20px;
+    position: absolute;
+    bottom: 26vh;
 }
 .container .container_left div h2 .top-team{
     color: rgb(4, 28, 73);
@@ -207,14 +209,45 @@ body{
   margin-bottom: 3vh;
   display: flex;
 }
+.button-38 {
+    background-color: #FF4D00;
+    border: 1px solid #ff3c0088;
+    border-radius: 3px;
+    /* box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0; */
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin:auto;
+    display: flex;
+    padding: 10px;
+    margin-top: -25px;
+  }
 
 .button-37:hover {
   box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
   transform: translateY(-2px);
 }
+.button-38:hover {
+  box-shadow: rgba(255, 38, 0, 0.336) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
 
 @media (min-width: 768px) {
   .button-37 {
+    padding: 10px 30px;
+  }
+  .button-38 {
     padding: 10px 30px;
   }
 }
@@ -237,6 +270,9 @@ body{
                 -webkit-backdrop-filter: blur(3.3px);
                 border: 1px solid rgba(255, 255, 255, 0.99);
                 margin: auto;
+                position: absolute;
+                bottom: 30px;
+                left: 2.5vw;
             }
             @media (max-width: 1200px) {
                 .plan-card {
@@ -404,6 +440,10 @@ body{
     width: 100%;
     object-position:center;
     -o-object-fit: cover;
+}
+.suggestion{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
 /* <!-- SIDE RIGHT CONTENT --> */
 .container_right{

@@ -117,8 +117,9 @@
         <div class="container_center">
             <div class="pano_content">
                 <img src=".\IMG\turis.jpeg" alt="">
+                <button class="button-38" role="button">Join O'Doyle</button>
             </div>
-            <p>afslasfaffdsfshjfsfh</p>
+            <h1 class="suggestion">Recommendation</h1>
         </div>
         <!-- SIDE RIGHT CONTENT -->
         <div class="container_right">

@@ -69,18 +69,18 @@
                 <input type="text" placeholder="Search..." id="search">
                 <input type="submit" name="" value="Search" id="search1">
             </form>
-            <ul>
-            <script>
-                <?php include('./JS/dashboard.js'); ?>
-            </script>
-                <div class="main">Favorites</div>
-                <li><i class="fa-solid fa-folder"></i> All My Files</li>
-                <li onclick="home()"><i class="fa-solid fa-folder"></i> Home Page</li>
-                <li><i class="fa-solid fa-folder"></i> Icloud Drive</li>
-                <li><i class="fa-solid fa-folder"></i> Deskstop</li>
-                <li><i class="fa-solid fa-folder"></i> Contents</li>
-                <li><i class="fa-solid fa-folder"></i> Document</li>
-            </ul>
+            <div class="sidebar_link">
+                <script>
+                    <?php include('./JS/dashboard.js'); ?>
+                </script>
+                    <div class="main">Favorites</div>
+                    <a href="./index.php"><i class="fa-solid fa-folder"></i> All My Files</a>
+                    <a href="#" onclick="home()"><i class="fa-solid fa-folder"></i> Home Page</a>
+                    <a href="#"><i class="fa-solid fa-folder"></i> Icloud Drive</a>
+                    <a href="#"><i class="fa-solid fa-folder"></i> Deskstop</a>
+                    <a href="#"><i class="fa-solid fa-folder"></i> Contents</a>
+                    <a href="#"><i class="fa-solid fa-folder"></i> Document</a>
+            </div>
 <!-- LOOP LESSON  -->
             <ul class="lesson_loop">
                 <div class="main">All Lesson</div>

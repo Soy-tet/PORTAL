@@ -6,7 +6,7 @@ body{
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: #f5fefd;
+    background-color: #dfe3ee;
     display: block;
     height: 200vh;
 }
@@ -152,7 +152,7 @@ body{
     z-index: 1;
     display: block;
     overflow-x: hidden;
-    background-color: #eee;
+    background-color: #dfe3ee;
     white-space: nowrap;
     overflow: hidden;
     border-radius: 20px;
@@ -184,15 +184,20 @@ border: 1px solid rgba(255, 255, 255, 0.38);
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.container-side-bar .sideB ul li{
+.sidebar_link{
+    display: grid;
+    margin-left: 2vw;
+}
+.container-side-bar .sideB .sidebar_link a{
     font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 13px;
     margin-left: 5px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-decoration: none;
 }
-.container-side-bar .sideB ul li:hover{
+.container-side-bar .sideB .sidebar_link a:hover{
         cursor: pointer;
     background-color: rgba(188, 193, 190, 0.303);
 }
@@ -207,7 +212,7 @@ border: 1px solid rgba(255, 255, 255, 0.38);
 /* CONTAINER-RIGHT-SIDE */
 .container-right-side{
     width: 80vw;
-    background-color: #f5fefd;
+    background-color: #dfe3ee;
     height: 120vh;
     z-index: 0;
     margin: auto auto auto 20vw;
@@ -396,19 +401,17 @@ box-shadow: rgba(4, 96, 104, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px
 table{
     border-collapse: collapse;
     margin: auto;
-    white-space: nowrap;
+    white-space: nowrap;    
     text-overflow: ellipsis;
-    border: 1px solid black;
-    overflow-y: auto;
-    width: 978px;
+    /* border: 1px solid black; */
+    overflow-y: hidden;
+    width: 76vw;
 }
 .table-wrapper{
     margin: auto;
-    max-height: 50vh;
-    max-width: 75vw;
-    min-height: 30vh;
-    min-width: 20vw;
-    overflow: scroll;
+    max-height: 100vh;
+    max-width: 76vw;
+    overflow: hidden;
 }
 td, th{
     /* border: 1px solid #dddddd ; */
@@ -422,7 +425,7 @@ td, th{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 40px;
+    max-width: 0vw;
     min-width: 5px;
 }
 tr td{
@@ -432,9 +435,9 @@ tr td{
     border-bottom: 1px solid #dddddd;
 }
 .tr:nth-child(even) {background: #cccccca5}
-.tr:nth-child(odd) {background: #FFF}
+.tr:nth-child(odd) {background:#dfe3ee}
 .tr:hover:nth-child(even) {background: #cccccca5}
-.tr:hover:nth-child(odd) {background: #FFF}
+.tr:hover:nth-child(odd) {background: #dfe3ee}
 td{
     white-space: nowrap;
     overflow: hidden;
@@ -448,7 +451,7 @@ td{
 }
 td:hover{
     cursor: pointer;
-    background-color: #ffdc14c8;
+    background-color: #ffdc141c;
 }
 .header-table{
     background-color: #009879;
@@ -456,14 +459,13 @@ td:hover{
     top: -1px;
     min-width: 5px;
 }
-.remove{
-    max-width: 30px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+tr .remove{
+    max-width: 1vw;
+    padding-right: 0px;
+    padding-bottom: 0px;
 }
 .header-table th{
     color: white;
-    max-width: 70px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
