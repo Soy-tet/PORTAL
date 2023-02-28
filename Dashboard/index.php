@@ -63,7 +63,8 @@
             <div onclick="profile()" class="container_profile_icon"><img src="./IMG/bVBtrAkT-wallha.com.png" alt=""></div>
     </div>
     <!-- TODO: -->
-    <div class="container-side-bar sidebar">
+  <div class="d-flex" style="display: flex;">
+  <div class="container-side-bar sidebar" style="position: sticky; top:40px; ">
         <div class="sideB">
             <form class="search1" action="./single.php">
                 <input type="text" placeholder="Search..." id="search">
@@ -173,6 +174,7 @@
                    </div>
                 </div>
             </div>
+            
 <!-- TABLE  -->
             <div class="table-wrapper">
                 <table>
@@ -198,7 +200,9 @@
                 <?php } ?>
                 </table>
             </div>
-           
+            <?php include("/Applications/XAMPP/xamppfiles/htdocs/PORTAL/PORTAL/component/card/card.php"); ?>
+            <h1>recomentation</h1>
         </div>
+  </div>
 </body>
 </html>

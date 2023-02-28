@@ -3,7 +3,7 @@ body{
     padding: 0;
     background-color: rgb(221, 221, 221);
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 /* NAV  */
@@ -17,6 +17,8 @@ body{
         background-color: white;
         z-index: 10;
         margin: auto;
+        position: sticky;
+        top: 0%;
     }
     .container-nav .container-left{
         display: flex;
@@ -59,7 +61,8 @@ body{
     -webkit-backdrop-filter: blur(3.3px);
     border: 1px solid rgba(255, 255, 255, 0.99);
     position: sticky;
-    min-width: 0px;
+    overflow-y: hidden;
+    top: 40px;
 }
 .btn-best{
     height: 20px;
@@ -96,7 +99,7 @@ body{
     text-overflow: ellipsis;
     margin-bottom: 20px;
     position: absolute;
-    bottom: 26vh;
+    bottom: 240px;
 }
 .container .container_left div h2 .top-team{
     color: rgb(4, 28, 73);
@@ -409,10 +412,12 @@ body{
 .container_center{
     width: 65vw;
     height: 400vh;
-    position: relative;
     overflow-y: scroll;
-    overflow-x: hidden;
-    min-width: 0px;
+    align-self: auto;
+}
+.scroll{
+    display: block;
+    overflow-y: scroll;
 }
 .pano_content{
     padding: 0;
@@ -432,10 +437,20 @@ body{
 .container_team{
     display: flex;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: auto;
     /* background-color: #e25444; */
     text-align: center;
+}
+@media screen and (max-width: 1280px){
+    .container_team{
+        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: auto;
+        /* background-color: #e25444; */
+        text-align: center;
+    }
 }
 .container_team .container_card_team{
     display: block;
@@ -454,7 +469,7 @@ body{
     font-style:italic;
 }
 .container_team .container_card_team img{
-    width: 200px;
+    width: 140px;
     border-radius: 10px;
 }
 /* <!-- SIDE RIGHT CONTENT --> */
@@ -465,7 +480,6 @@ body{
     background-color: beige;
         /* From https://css.glass */
     background: rgba(255, 255, 255, 0.17);
-    border-radius: 0px 16px 0px 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.3px);
     -webkit-backdrop-filter: blur(3.3px);
@@ -474,5 +488,6 @@ body{
     position: sticky;
     top: 2vh;
     z-index: 5;
-    border-radius: 0px 0px 0px 30px;
+    position: sticky;
+    top: 40px;
 }

@@ -7,8 +7,6 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #dfe3ee;
-    display: block;
-    height: 200vh;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -31,7 +29,8 @@ body{
     background: #555; 
   }
 .navbar{
-    position: fixed;
+    position: sticky;
+    top: 0%;
     width: 100vw;
     height: 40px;
     margin: auto;
@@ -154,11 +153,9 @@ body{
     overflow-x: hidden;
     background-color: #dfe3ee;
     white-space: nowrap;
-    overflow: hidden;
     border-radius: 20px;
     text-overflow: ellipsis;
     resize: horizontal;
-    position: fixed;
     overflow-y:hidden;
     background-color: #f5fefd25;
     box-shadow: rgba(0, 0, 0, 0.057) 1.95px 1.95px 2.6px;
@@ -166,10 +163,10 @@ body{
     width: 20vw;
     height: 75vh;
     max-width: 50vw;
-    /* From https://css.glass */
-backdrop-filter: blur(1.6px);
--webkit-backdrop-filter: blur(0.5px);
-border: 1px solid rgba(255, 255, 255, 0.38);
+        /* From https://css.glass */
+        backdrop-filter: blur(1.6px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
 }
 .container-side-bar .sideB{
     white-space: nowrap;
@@ -213,9 +210,9 @@ border: 1px solid rgba(255, 255, 255, 0.38);
 .container-right-side{
     width: 80vw;
     background-color: #dfe3ee;
-    height: 120vh;
+    height: auto;
     z-index: 0;
-    margin: auto auto auto 20vw;
+    margin: auto;
     overflow-y: scroll;
 }
 .resizer{
