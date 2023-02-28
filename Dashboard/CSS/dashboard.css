@@ -167,6 +167,8 @@ body{
         backdrop-filter: blur(1.6px);
     -webkit-backdrop-filter: blur(0.5px);
     border: 1px solid rgba(255, 255, 255, 0.38);
+    position: sticky; 
+    top:40px; 
 }
 .container-side-bar .sideB{
     white-space: nowrap;
@@ -403,12 +405,14 @@ table{
     /* border: 1px solid black; */
     overflow-y: hidden;
     width: 76vw;
+    height: auto;
 }
 .table-wrapper{
     margin: auto;
     max-height: 100vh;
     max-width: 76vw;
     overflow: hidden;
+    margin-top: 0%;
 }
 td, th{
     /* border: 1px solid #dddddd ; */
@@ -416,7 +420,6 @@ td, th{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
 }
 .tr td{
     white-space: nowrap;
@@ -432,9 +435,13 @@ tr td{
     border-bottom: 1px solid #dddddd;
 }
 .tr:nth-child(even) {background: #cccccca5}
-.tr:nth-child(odd) {background:#dfe3ee}
+.tr:nth-child(odd) {background:#dfe3ee;
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,.3) 0%, rgba(148,187,233,.4) 100%);}
 .tr:hover:nth-child(even) {background: #cccccca5}
-.tr:hover:nth-child(odd) {background: #dfe3ee}
+.tr:hover:nth-child(odd) {background: #dfe3ee;
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,.3) 0%, rgba(148,187,233,.4) 100%);}
 td{
     white-space: nowrap;
     overflow: hidden;
@@ -448,13 +455,17 @@ td{
 }
 td:hover{
     cursor: pointer;
-    background-color: #ffdc141c;
+    background-color: #1495ff1c;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,.4) 0%, rgba(148,187,233,.1) 100%);
 }
 .header-table{
     background-color: #009879;
     position: sticky;
     top: -1px;
     min-width: 5px;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 tr .remove{
     max-width: 1vw;

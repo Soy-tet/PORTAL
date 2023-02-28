@@ -1,26 +1,21 @@
-body{
-    overflow: hidden;
-    overflow-y: hidden;
-    height: 200vh;
-}
-/* TABLE SHOW DATABASE */
-table{
+/* 
+.table-home{
     border-collapse: collapse;
     margin: auto;
     white-space: nowrap;    
     text-overflow: ellipsis;
-    /* border: 1px solid black; */
     overflow-y: hidden;
     width: 76vw;
+    margin-top: 0%;
+    position:relative;
 }
-.table-wrapper{
-    margin: auto;
+.table-wrapper-home{
+    margin: 0;
     max-height: 100vh;
     max-width: 76vw;
     overflow: hidden;
 }
 td, th{
-    /* border: 1px solid #dddddd ; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     white-space: nowrap;
     overflow: hidden;
@@ -56,7 +51,7 @@ td{
 }
 td:hover{
     cursor: pointer;
-    background-color: #ffdc141c;
+    background-color: #1495ff1c;
 }
 .header-table{
     background-color: #009879;
@@ -75,4 +70,4 @@ tr .remove{
     overflow: hidden;
     text-overflow: ellipsis;
     font-family:'Courier New', Courier, monospace;
-}
+} */

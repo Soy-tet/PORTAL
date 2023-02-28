@@ -16,6 +16,31 @@
         <script src="https://kit.fontawesome.com/c90b4e63b2.js" crossorigin="anonymous"></script>
         <title>Dashboard || Deskstop</title>
         <link rel="stylesheet" type="" href="./CSS/dashboard.css">
+        <style>
+        .container-side-bar{
+            z-index: 1;
+            display: block;
+            overflow-x: hidden;
+            background-color: #dfe3ee;
+            white-space: nowrap;
+            border-radius: 20px;
+            text-overflow: ellipsis;
+            resize: horizontal;
+            overflow-y:hidden;
+            background-color: #f5fefd25;
+            box-shadow: rgba(0, 0, 0, 0.057) 1.95px 1.95px 2.6px;
+            padding: 7vh 0px;
+            width: 20vw;
+            height: 75vh;
+            max-width: 50vw;
+                /* From https://css.glass */
+                backdrop-filter: blur(1.6px);
+            -webkit-backdrop-filter: blur(0.5px);
+            border: 1px solid rgba(255, 255, 255, 0.38);
+            position: sticky; 
+            top:40px; 
+        }
+        </style>
     </head>
     <body>
     <div class="container_profile" id="profile">
@@ -64,7 +89,7 @@
     </div>
     <!-- TODO: -->
   <div class="d-flex" style="display: flex;">
-  <div class="container-side-bar sidebar" style="position: sticky; top:40px; ">
+  <div class="container-side-bar sidebar">
         <div class="sideB">
             <form class="search1" action="./single.php">
                 <input type="text" placeholder="Search..." id="search">
