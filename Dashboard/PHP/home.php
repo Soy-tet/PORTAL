@@ -12,21 +12,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".\PHP\Login\Clone\css\home.css">
+    <script src="https://kit.fontawesome.com/c90b4e63b2.js" crossorigin="anonymous"></script>
     <title>home</title>
 </head>
-<body>
-    <style>
-        .image-table-team{
+    <script>
+// var x = function confirm(){
+//     prompt('Are you really want to delete this data?');
+// }
+// if(x=true){
+    
+// }
+
+    </script>
+<body class="body">
+   <div class="global">
+      <?php include("/Applications/XAMPP/xamppfiles/htdocs/PORTAL/PORTAL/component/card/card.php"); ?>
+        <!-- TABLE  -->
+        <a href="\PORTAL\PORTAL\Dashboard\SQL\INSERT\Clone\team.php"><button class="btn_new5">Enroll Comunication</button></a>
+        <div class="table-wrapper-home">
+            <table class="table-home">
+                <tr class="header-table">
+                    <th>id</th>
+                    <th>name</th>
+                    <th>description</th>
+                    <th>password</th>
+                    <th>image</th>
+                    <th class="remove">Edit</th>
+                    <th class="remove">X</th>
+                </tr><br>
+        <?php
+        $i=0;
+        while($row = mysqli_fetch_assoc($all_data)){
+            ?>  
+                <tr class="tr">
+                    <td><?php echo $row["id"]; ?></td>
+                    <td><?php echo $row["name"]; ?></td>
+                    <td><?php echo $row["description"]; ?></td>
+                    <td><?php echo $row["password"]; ?></td>
+                    <td><img class="image-table-team" src="<?php echo $row["image"]; ?>" alt=""></td>
+                    <td class="remove"><i class="fa-sharp fa-solid fa-pen-to-square"></i></td>
+                    <td class="remove"><a href="/PORTAL/PORTAL/Dashboard/SQL/Function/del-team.php?userid=<?php echo $row["id"]; ?>" ><i class="fa-solid fa-trash"></i></a></td>
+                </tr>
+            <?php
+             $i++;
+                }
+            ?>
+            </table>
+        </div>
+   </div>
+</body>
+
+<!-- STYLE CSSSSSSSSSSSSSSS -->
+<style>
+    .image-table-team{
     width: 40px;
     height: 40px;
     border-radius: 3px;
     object-fit: cover;
 }
 body{
-    overflow-y: auto;
+    overflow-y: scroll;
+    width: 100vw;
 }
 .global{
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 .navbar{
     position: sticky;
@@ -37,8 +86,10 @@ body{
             overflow-x: hidden;
             background-color: #f5fefd25;
             box-shadow: rgba(0, 0, 0, 0.057) 1.95px 1.95px 2.6px;
-            position: sticky; 
+            position: fixed; 
             top:40px; 
+            height: 99vh;
+            /* position: fixed; */
         }
 
 /* TABLE SHOW DATABASE */
@@ -47,11 +98,17 @@ body{
     margin: auto;
     white-space: nowrap;    
     text-overflow: ellipsis;
-    /* border: 1px solid black; */
     overflow-y: hidden;
     width: 76vw;
     margin-top: 0%;
     position:relative;
+    overflow-x: hidden;
+}
+.container-right-side{
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    margin-left: 20vw;
 }
 .table-wrapper-home{
     margin: 0;
@@ -124,38 +181,9 @@ tr .remove{
     text-overflow: ellipsis;
     font-family:'Courier New', Courier, monospace;
 }
+.body{
+    overflow-y: hidden;
+}
 
-    </style>
-   <div class="global">
-      <?php include("/Applications/XAMPP/xamppfiles/htdocs/PORTAL/PORTAL/component/card/card.php"); ?>
-        <!-- TABLE  -->
-        <a href="\PORTAL\PORTAL\Dashboard\SQL\INSERT\Clone\team.php"><button class="btn_new5">Enroll Comunication</button></a>
-        <div class="table-wrapper-home">
-            <table class="table-home">
-                <tr class="header-table">
-                    <th>id</th>
-                    <th>name</th>
-                    <th>description</th>
-                    <th>password</th>
-                    <th>image</th>
-                    <th class="remove">Edit</th>
-                    <th class="remove">X</th>
-                </tr><br>
-        <?php
-        while($row = mysqli_fetch_assoc($all_data)){
-            ?>  
-                <tr class="tr">
-                    <td><?php echo $row["id"]; ?></td>
-                    <td><?php echo $row["name"]; ?></td>
-                    <td><?php echo $row["description"]; ?></td>
-                    <td><?php echo $row["password"]; ?></td>
-                    <td><img class="image-table-team" src="<?php echo $row["image"]; ?>" alt=""></td>
-                    <td class="remove"><i class="fa-sharp fa-solid fa-pen-to-square"></i></td>
-                    <td class="remove"><i class="fa-solid fa-trash"></i></td>
-                </tr>
-            <?php } ?>
-            </table>
-        </div>
-   </div>
-</body>
+</style>
 </html>
