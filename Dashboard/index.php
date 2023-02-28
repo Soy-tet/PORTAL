@@ -116,7 +116,7 @@
                     ?>
                     <div class="FLEX">
                         <i class="fa-solid fa-folder" ></i>
-                        <a class='link_loop_unit' href='./LessonAll.php'><?php echo $lesson_loop; ?></a>
+                        <a class='link_loop_unit' href='/PORTAL/PORTAL/Content/LessonAll.php?userid=<?php echo $rowq["Id"]; ?>'><?php echo $lesson_loop; ?></a>
                     </div>
                 <?php } ?>
             </ul>
@@ -162,7 +162,7 @@
                 <div class="container_view">
                     <div class="displayBlock01">
                         <div class="container_total">
-                            <div class="total">3019426+</div>
+                            <div class="total"><?php echo implode("",$assoc_id) ?>+</div>
                             <div class="total_text">all views earning</div>
                         </div>
                         <i class="fa-solid fa-chart-simple fa-2x"></i>
@@ -204,7 +204,7 @@
             <div class="table-wrapper">
                 <table>
                     <tr class="header-table">
-                        <th><?php echo implode("",$assoc_id) ?></th>
+                        <th>ID</th>
                         <th>Title</th>
                         <th>Description</th>
                         <th>image URL</th>

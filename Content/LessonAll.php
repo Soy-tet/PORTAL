@@ -6,13 +6,9 @@
     if(!$connection_lesson){
         die("connection death");
     }
-    if(!isset($_COOKIE['username'])){
-        header("Location: ./Dasboard@.php");
-        exit();
-    }
-    $result = mysqli_query($connection_lesson,"SELECT * FROM Crash_course where id=16;");
+    $userid = $_GET["userid"];
+    $result = mysqli_query($connection_lesson,"SELECT * FROM Crash_course where id='$userid';");
     $lesson_convert = mysqli_fetch_assoc($result);
-    include_once('./framework.js');
     ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
