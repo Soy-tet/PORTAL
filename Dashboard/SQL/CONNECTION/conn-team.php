@@ -3,4 +3,5 @@
     if(!$connection_team){
         die("connection death");
     }
+    $result_team = mysqli_query($connection_team,"SELECT * FROM `team_login`;");
 ?>

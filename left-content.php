@@ -5,19 +5,21 @@
                     <p class="btn-best">Best</p>
                     <p class="top-team">Top Super team</p>
                 </h2>
-                <?php 
-                // TODO: WHILE LOOP
-                ?>
+                <?php
+               $i=0;
+               while($row = mysqli_fetch_assoc($result_team)){
+                ?>  
                 <div class="team">
                     <div class="container_icon_team">
-                        <img src=".\ICON\AI\8-3tF7dmiYqxfHfnb.png" alt="">
+                        <img src="<?php echo $row['image']; ?>" alt="">
                         <div class="team_des">
-                          <p>O'Doyle</p>
-                          <p class="des">The meaning of DESCRIPTION is an act of desccccccccccccccccccccribin</p>
+                          <p><?php echo $row['name']; ?></p>
+                          <p class="des"><?php echo $row['description']; ?></p>
                         </div>
                     </div>
                     <h2>21k</h2>
                 </div>
+                <?php $i++; } ?>
                 <button class="button-37" role="button">browse all +100</button>
 <!-- CARD NEWS  -->
 <p class="btn-best2">News</p>
