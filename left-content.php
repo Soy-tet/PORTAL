@@ -5,41 +5,14 @@
                     <p class="btn-best">Best</p>
                     <p class="top-team">Top Super team</p>
                 </h2>
+                <?php 
+                // TODO: WHILE LOOP
+                ?>
                 <div class="team">
                     <div class="container_icon_team">
                         <img src=".\ICON\AI\8-3tF7dmiYqxfHfnb.png" alt="">
                         <div class="team_des">
                           <p>O'Doyle</p>
-                          <p class="des">The meaning of DESCRIPTION is an act of desccccccccccccccccccccribin</p>
-                        </div>
-                    </div>
-                    <h2>21k</h2>
-                </div>
-                <div class="team">
-                    <div class="container_icon_team">
-                        <img src=".\ICON\AI\8-6lSqkfgfPtJXqAB.png" alt="">
-                        <div class="team_des">
-                          <p>Bowser</p>
-                          <p class="des">The meaning of DESCRIPTION is an act of desccccccccccccccccccccribin</p>
-                        </div>
-                    </div>
-                    <h2>21k</h2>
-                </div>
-                <div class="team">
-                    <div class="container_icon_team">
-                        <img src=".\ICON\AI\8-asUFJw29SCZIOBA.png" alt="">
-                        <div class="team_des">
-                          <p>Aspect</p>
-                          <p class="des">The meaning of DESCRIPTION is an act of desccccccccccccccccccccribin</p>
-                        </div>
-                    </div>
-                    <h2>21k</h2>
-                </div>
-                <div class="team">
-                    <div class="container_icon_team">
-                        <img src=".\ICON\AI\8-cv3Pnd0C6ipOr79.png" alt="">
-                        <div class="team_des">
-                          <p>Kraken</p>
                           <p class="des">The meaning of DESCRIPTION is an act of desccccccccccccccccccccribin</p>
                         </div>
                     </div>

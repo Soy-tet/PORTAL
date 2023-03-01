@@ -1,6 +1,6 @@
 <!-- CONNCETION LESSON DATABASE FROM MYSQL  -->
 <?php
-            $connection_lesson = mysqli_connect("localhost","root","","Lesson");
+            $connection_lesson = mysqli_connect("localhost","root","","Dashboard");
             if(!$connection_lesson){
                 die("connection death");
             }
@@ -9,7 +9,7 @@
             $count = mysqli_query($connection_lesson,"SELECT COUNT(*) FROM Crash_course;");
             $rowq = mysqli_fetch_assoc($result);
 //   CATCH ID 
-            $count_id = mysqli_query($connection_lesson,"SELECT id FROM Crash_course ;");
+            $count_id = mysqli_query($connection_lesson,"SELECT * FROM Content;");
             $assoc = mysqli_fetch_assoc($count);
             $assoc_id = mysqli_fetch_assoc($count_id);
 ?>

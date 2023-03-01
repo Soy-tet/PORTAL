@@ -212,6 +212,7 @@
                         <th class="remove">X</th>
                     </tr><br>
                <?php
+               $i=0;
                while($row = mysqli_fetch_assoc($all_data)){
                 ?>  
                     <tr class="tr">
@@ -220,9 +221,9 @@
                         <td><?php echo $row["Description"]; ?></td>
                         <td><?php echo $row["Image"]; ?></td>
                         <td class="remove"><i class="fa-sharp fa-solid fa-pen-to-square"></i></td>
-                        <td class="remove"><i class="fa-solid fa-trash"></i></td>
+                        <td class="remove"><a href="/PORTAL/PORTAL/Dashboard/SQL/Function/del-lesson.php?userid=<?php echo $row["id"]; ?>" ><i class="fa-solid fa-trash"></i></a></td>
                     </tr>
-                <?php } ?>
+                <?php $i++; } ?>
                 </table>
             </div>
             <?php include("/Applications/XAMPP/xamppfiles/htdocs/PORTAL/PORTAL/component/card/card.php"); ?>

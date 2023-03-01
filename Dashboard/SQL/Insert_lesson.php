@@ -20,7 +20,7 @@
             $header = $_POST["header"];
             $description = $_POST["description"];
             $image = $_POST["Image"];
-            $result = mysqli_query($connection_lesson,"INSERT INTO `Crash_course` (`Title`, `Header`, `Description`, `Image`) VALUES ('$title', '$header', '$description', '$image');");
+            $result = mysqli_query($connection_lesson,"INSERT INTO `Crash_course` (`Title`, `Header`, `Description`, `Image`,`time`) VALUES ('$title', '$header', '$description', '$image',CURRENT_TIME());");
             echo"succesfully";
         }
 
