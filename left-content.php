@@ -19,7 +19,11 @@
                     </div>
                     <h2>21k</h2>
                 </div>
-                <?php $i++; } ?>
+                <?php $i++;
+                if ($i>3){
+                    break;
+                }
+             } ?>
                 <button class="button-37" role="button">browse all +100</button>
 <!-- CARD NEWS  -->
 <p class="btn-best2">News</p>

@@ -6,6 +6,9 @@
     overflow-x: hidden;
     overflow-y: scroll;
 }
+a{
+    text-decoration: none;
+}
 
 /* NAV  */
     .container-nav{
@@ -471,6 +474,8 @@
 }
 .container_team .container_card_team img{
     width: 140px;
+    height: 140px;
+    object-fit: cover;
     border-radius: 10px;
 }
 /* <!-- SIDE RIGHT CONTENT --> */

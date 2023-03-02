@@ -2,89 +2,26 @@
             <div class="scroll">
                 <div class="pano_content">
                     <img src=".\IMG\turis.jpeg" alt="">
-                    <button class="button-38" role="button">Join O'Doyle</button>
+                    <a href="\PORTAL\PORTAL\Dashboard\SQL\INSERT\Clone\team.php"><button class="button-38" role="button">Being Leadership</button></a>
                 </div>
                 <h1 class="suggestion">Recommendation</h1>
                 <div class="container_team">
+                <?php
+               while($row2 = mysqli_fetch_assoc($result_team2)){
+                ?>  
                     <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
+                        <img src="<?php echo $row2['image']; ?>" alt="">
+                        <p class="name_team"><?php echo $row2['name']; ?></p>
                         <p class="team_member">25,436k members</p>
                     </div>
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                </div>
-                <div class="container_team">
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                </div>
-                <div class="container_team">
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
-                    <div class="container_card_team">
-                        <img src="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-TxZJH2qx7HtJ5RY.png?nc=1" alt="">
-                        <p class="name_team">AKA BOOM</p>
-                        <p class="team_member">25,436k members</p>
-                    </div>
+                    <?php
+                     } ?>
                 </div>
             </div>
+            <!-- <?php 
+            $x =13;
+            $result5= mysqli_query($connection_team,"SELECT * FROM `team_login` where id = $x;");
+            $data = mysqli_fetch_assoc($result5);
+            echo implode("",$data);
+             ?> -->
         </div>
