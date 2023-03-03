@@ -1,10 +1,10 @@
 <div class="container_center">
             <div class="scroll">
                 <div class="pano_content">
-                    <img src=".\IMG\turis.jpeg" alt="">
+                    <img src="https://aitsrajampet.ac.in/images/pdf/ai/Artificial-Intelligence-and-Machine-Learning.png" alt="">
                     <a href="\PORTAL\PORTAL\Dashboard\SQL\INSERT\Clone\team.php"><button class="button-38" role="button">Being Leadership</button></a>
                 </div>
-                <h1 class="suggestion">Recommendation</h1>
+                <h4 class="suggestion" style="font-size: small;">Recommendation</h4>
                 <div class="container_team">
                 <?php
                while($row2 = mysqli_fetch_assoc($result_team2)){

@@ -14,12 +14,12 @@ toggle.addEventListener("click", () => {
   stylesheet.setProperty("--color-1", color2);
   stylesheet.setProperty("--color-2", color1);
 });
-function note() {
+function note2() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    document.getElementById("demo").innerHTML =
+    document.getElementById("demo1").innerHTML =
     xhttp.responseText;
   }
-  xhttp.open("GET", "./PHP/NOTE/note.php"); 
+  xhttp.open("GET", "../../back_note.php");
   xhttp.send();
 }

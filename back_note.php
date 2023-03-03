@@ -4,7 +4,6 @@
     <div class="whole">
         <!-- NAV BAR  -->
 
-        <?php require_once('navbar.php'); ?>
 
         <!-- CONTENT  -->
 

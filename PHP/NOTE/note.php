@@ -8,7 +8,7 @@
 
         <!-- CONTENT  -->
 
-        <div class="container" id="demo">
+        <div class="container" id="demo1">
 
             <!-- SIDE Left BAR  -->
 

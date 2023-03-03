@@ -121,7 +121,6 @@ a{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-top: 40px;
 }
 .container .container_left div h2 .top-team{
     color: rgb(4, 28, 73);
@@ -433,7 +432,7 @@ a{
 /* Center SIDE  */
 .container_center{
     width: 60vw;
-    height: 100vh;
+    height:100vh;
     overflow-y: scroll;
     align-self: auto;
 }
