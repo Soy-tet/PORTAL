@@ -8,9 +8,15 @@
             <div class="navBar-head">@Leader-Username</div>
         </div>
         <div class="container-right">
-            <?php while($data1 = mysqli_fetch_assoc($result)){ ?>
-            <div class="header"><?php echo $data1['title']; ?></div>
+            <?php
+              $connection = mysqli_connect("localhost","root","","Dashboard");
+              if(!$connection){
+                  die("connection death");
+              }
+            $data_nav = mysqli_query($connection,"SELECT * FROM `navbar`;");
+             while($data_nav_db = mysqli_fetch_assoc($data_nav)){ ?>
+            <a href="<?php echo $data_nav_db['link']; ?>"><div class="header"><?php echo $data_nav_db['header']; ?></div></a>
            <?php } ?>
-            <div class="icon-social"><?php echo $data['icon']; ?></div>
+            <!-- <div class="icon-social"><?php echo $data['icon']; ?></div> -->
         </div>
 </div>

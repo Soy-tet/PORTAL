@@ -8,15 +8,16 @@
     $sql = "DELETE FROM `team_login`  WHERE id='$userid';";
     if (mysqli_query($connection_team, $sql)) {
         echo "Record deleted successfully";
-        // header('location: /PORTAL/PORTAL/Dashboard/index.php');
+        header('location: /PORTAL/PORTAL/Dashboard/index.php');
         $count = mysqli_query($connection_team, "SELECT COUNT(*) FROM `team_login`;");
         $data4 = mysqli_fetch_assoc($count);
         $count5 = implode("",$data4);
-        while($useridPlus< 50){
+        while($useridPlus< 60){
             mysqli_query($connection_team,'UPDATE `team_login` SET id = $userid WHERE id = $useridPlus;');
             echo"hello";
             echo $useridPlus;
             echo $userid;
+            $userid++;
             $useridPlus++;
         }
     } else {

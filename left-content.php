@@ -6,7 +6,7 @@
                     <p class="top-team">Top Super team</p>
                 </h2>
                 <?php
-               $i=0;
+               $i=0;  
                while($row = mysqli_fetch_assoc($result_team)){
                 ?>  
                 <div class="team">

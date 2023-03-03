@@ -105,6 +105,23 @@ a{
     position: absolute;
     bottom: 240px;
 }
+.btn-best5{
+    height: 20px;
+    width: 80px;
+    font-size: small;
+    justify-content: center;
+    border-radius: 30px;
+    display: flex;
+    margin: 20px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(235,12,200);
+    background: linear-gradient(90deg, rgba(235,12,200,1) 0%, rgba(250,146,0,1) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.99);
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .container .container_left div h2 .top-team{
     color: rgb(4, 28, 73);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -414,7 +431,7 @@ a{
             }
 /* Center SIDE  */
 .container_center{
-    width: 65vw;
+    width: 60vw;
     height: 400vh;
     overflow-y: scroll;
     align-self: auto;
@@ -440,6 +457,7 @@ a{
 /* CONTAINER-TEAM  */
 .container_team{
     display: flex;
+    width: 60vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: auto;
@@ -458,18 +476,26 @@ a{
 }
 .container_team .container_card_team{
     display: block;
+    padding-top: 10px;
+    border-radius: 10px;
+    padding-bottom: 0%;
+}
+.container_team .container_card_team:hover{
+    background-color: #13074a10;
+    cursor: pointer;
 }
 .container_team .container_card_team .name_team{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-bottom: 0%;
+    padding: 0%;
 }
 .container_team .container_card_team .team_member{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: small;
     color: #0000009f;
-    margin-left: 18px;
-    margin-top: 0px;
+    padding: 0%;
+    margin:0%;
     font-style:italic;
 }
 .container_team .container_card_team img{
@@ -477,10 +503,12 @@ a{
     height: 140px;
     object-fit: cover;
     border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
 }
 /* <!-- SIDE RIGHT CONTENT --> */
 .container_right{
-    width: 15vw;
+    width: 20vw;
     height: 100vh;
                  /* height: 85.5vh; */
     background-color: beige;

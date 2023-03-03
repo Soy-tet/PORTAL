@@ -9,7 +9,7 @@
                 die("connection death");
             }
             $result2 = mysqli_query($connection_lesson2,"SELECT * FROM `Profile`;");
-// TODO: CHACK (IF NOT){REDIRECT TO LOGIN};
+            $data_nav = mysqli_query($connection,"SELECT * FROM `navbar`;");
             // if(!isset($_COOKIE['username'])){
             //     header("Location: ./login.php");
             //     exit();

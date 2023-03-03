@@ -102,7 +102,7 @@
                     <div class="main">Favorites</div>
                     <a href="./index.php"><i class="fa-solid fa-folder"></i> All My Files</a>
                     <a href="#" onclick="home()"><i class="fa-solid fa-folder"></i> Home Page</a>
-                    <a href="#"><i class="fa-solid fa-folder"></i> Icloud Drive</a>
+                    <a href="#" onclick="navbar()"><i class="fa-solid fa-folder"></i> Navbar Customize</a>
                     <a href="#"><i class="fa-solid fa-folder"></i> Deskstop</a>
                     <a href="#"><i class="fa-solid fa-folder"></i> Contents</a>
                     <a href="#"><i class="fa-solid fa-folder"></i> Document</a>
