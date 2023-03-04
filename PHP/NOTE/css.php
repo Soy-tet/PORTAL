@@ -6,6 +6,26 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(40, 133, 164); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 a{
     text-decoration: none;
 }
@@ -597,6 +617,17 @@ html,
 .switch__input:checked + .switch__slider::before {
   transform: translate(1.8rem, -50%);
 }
-
+.unpin{
+    opacity: 0%;
+    transition: .2s;
+    color: #e25444;
+    padding: 10px;
+    border-radius: 20%;
+}
+.unpin:hover{
+    opacity: 100%;
+    background-color: #00044610;
+    border-radius: 50%;
+}
 
 </style>

@@ -9,6 +9,17 @@
     <script src="https://kit.fontawesome.com/c90b4e63b2.js" crossorigin="anonymous"></script>
     <title>MCLN || given knowlegde</title>
     <script>
-
+//         var rightClick = document.getElementById('box');
+// if (document.addEventListener) {
+//   document.addEventListener('contextmenu', function(e) {
+//     alert("You've tried to open context menu"); //here you draw your own menu
+//     e.preventDefault();
+//   }, false);
+// } else {
+//   document.attachEvent('oncontextmenu', function() {
+//     alert("You've tried to open context menu");
+//     window.event.returnValue = false;
+//   });
+// }
     </script>
 </head>

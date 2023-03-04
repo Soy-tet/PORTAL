@@ -14,12 +14,23 @@ toggle.addEventListener("click", () => {
   stylesheet.setProperty("--color-1", color2);
   stylesheet.setProperty("--color-2", color1);
 });
-function note2() {
+function home() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
     document.getElementById("demo1").innerHTML =
     xhttp.responseText;
   }
-  xhttp.open("GET", "../../back_note.php");
+  xhttp.open("GET", "../../index.php");
   xhttp.send();
+}
+if (document.addEventListener) {
+  document.addEventListener('contextmenu', function(e) {
+    alert("You've tried to open context menu"); //here you draw your own menu
+    e.preventDefault();
+  }, false);
+} else {
+  document.attachEvent('oncontextmenu', function() {
+    alert("You've tried to open context menu");
+    window.event.returnValue = false;
+  });
 }

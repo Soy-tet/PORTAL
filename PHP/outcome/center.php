@@ -1,7 +1,7 @@
 <div class="container_center">
             <div class="scroll">
                 <div class="pano_content">
-                    <img src="https://c4.wallpaperflare.com/wallpaper/1008/896/1021/simple-background-digital-art-books-magic-wallpaper-preview.jpg" alt="">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/748/1015/620/video-games-digital-art-video-game-art-katana-samurai-hd-wallpaper-preview.jpg" alt="">
                     <a href="/PORTAL/PORTAL/PHP/note_add/note_add.php"><button class="button-38" role="button">Let's add your note</button></a>
                 </div>
                 <div class="container_team">

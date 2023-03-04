@@ -14,21 +14,12 @@ toggle.addEventListener("click", () => {
   stylesheet.setProperty("--color-1", color2);
   stylesheet.setProperty("--color-2", color1);
 });
-function note() {
+function home() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    document.getElementById("demo").innerHTML =
+    document.getElementById("demo1").innerHTML =
     xhttp.responseText;
   }
-  xhttp.open("GET", "./PHP/NOTE/note.php"); 
-  xhttp.send();
-}
-function outcome() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("demo").innerHTML =
-    xhttp.responseText;
-  }
-  xhttp.open("GET", "./PHP/outcome/outcome.php"); 
+  xhttp.open("GET", "../../index.php");
   xhttp.send();
 }

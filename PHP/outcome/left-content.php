@@ -3,7 +3,7 @@
                 <h2>
                     <!-- <img src=".\ICON\favicon.ico" alt=""> -->
                     <p class="btn-best">Pin</p>
-                    <p class="top-team">Your favorites here!</p>
+                    <p class="top-team">HERE ARE MINES!</p>
                 </h2>
                 <?php
                $i=0;  

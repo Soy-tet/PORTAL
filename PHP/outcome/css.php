@@ -6,10 +6,13 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
+a{
+    text-decoration: none;
+}
 /* width */
 ::-webkit-scrollbar {
-    width: 3px;
-    height: none;
+    width: 2px;
+    height: 0px;
   }
   
   /* Track */
@@ -26,10 +29,6 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
-a{
-    text-decoration: none;
-}
-
 /* NAV  */
     .container-nav{
         width: 100vw;
@@ -141,7 +140,6 @@ a{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-top: 40px;
 }
 .container .container_left div h2 .top-team{
     color: rgb(4, 28, 73);
@@ -453,7 +451,7 @@ a{
 /* Center SIDE  */
 .container_center{
     width: 60vw;
-    height: 100vh;
+    height:100vh;
     overflow-y: scroll;
     align-self: auto;
 }
@@ -463,13 +461,12 @@ a{
 }
 .pano_content{
     padding: 0;
-    
 }
 .pano_content img{
     object-fit: cover;
     height: 30vh;
     width: 100%;
-    object-position:center;
+    object-position:center top;
     -o-object-fit: cover;
 }
 .suggestion{
@@ -483,6 +480,7 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: auto;
+    /* background-color: #e25444; */
     text-align: center;
 }
 @media screen and (max-width: 1280px){
@@ -547,21 +545,6 @@ a{
     z-index: 5;
     position: sticky;
     top: 40px;
-}
-.header_right_profile{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    color: #000446;
-    height: 30vh;
-    margin-left: 10px;
-
-}
-.contact_right{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    color: #000446;
-    height: 40vh;
-    margin-left: 10px;
 }
 
 
@@ -633,6 +616,17 @@ html,
 .switch__input:checked + .switch__slider::before {
   transform: translate(1.8rem, -50%);
 }
-
+.unpin{
+    opacity: 0%;
+    transition: .2s;
+    color: #e25444;
+    padding: 10px;
+    border-radius: 20%;
+}
+.unpin:hover{
+    opacity: 100%;
+    background-color: #00044610;
+    border-radius: 50%;
+}
 
 </style>

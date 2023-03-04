@@ -9,7 +9,7 @@
                 <?php
                while($row2 = mysqli_fetch_assoc($result_team2)){
                 ?>  
-                    <div class="container_card_team">
+                    <div class="container_card_team" id="box">
                         <img src="<?php echo $row2['image']; ?>" alt="">
                         <p class="name_team"><?php echo $row2['name']; ?></p>
                         <p class="team_member">25,436k members</p>
