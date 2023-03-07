@@ -26,7 +26,7 @@
     </script>
 <body class="body">
    <div class="global">
-      <?php include("/PORTAL/PORTAL/component/card/card.php"); ?>
+     <?php include("../../component/card/card.php"); ?>
         <!-- TABLE  -->
         <a href="#"><button class="btn_new5">Only Edite</button></a>
         <div class="table-wrapper-home">

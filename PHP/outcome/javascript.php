@@ -1,4 +1,5 @@
-const stylesheet = document.documentElement.style;
+<script>
+  const stylesheet = document.documentElement.style;
 
 const toggle = document.querySelector(".switch__input[data-theme-toggle]");
 toggle.addEventListener("click", () => {
@@ -32,3 +33,5 @@ function notePad() {
   xhttp.open("GET", "./note_page.php");
   xhttp.send();
 }
+alert('hello');
+</script>

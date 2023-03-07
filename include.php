@@ -1,5 +1,6 @@
 <?php 
     session_start();
+    require_once('./SQL/CONNECTION/conn-dashboard.php');
     include("./SQL/Function/chack_session.php");
     include('./SQL/CONNECTION/conn-INDEX.php');
     require_once('head.php');

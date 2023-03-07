@@ -1,0 +1,22 @@
+<div class="container-nav">
+        <div class="container-left">
+        <label onclick="note2()" class="switch">
+        <input onclick="note2()" class="switch__input" type="checkbox" data-theme-toggle>
+        <span onclick="note2()" class="switch__slider"></span>
+        </label>
+            <div class="icon"><?php echo $data['icon']; ?></div>
+            <a href="index.php"><div class="navBar-head">@After_You</div></a>
+        </div>
+        <div class="container-right">
+            <?php
+              $connection = mysqli_connect("localhost","root","","Dashboard");
+              if(!$connection){
+                  die("connection death");
+              }
+            $data_nav = mysqli_query($connection,"SELECT * FROM `navbar`;");
+             while($data_nav_db = mysqli_fetch_assoc($data_nav)){ ?>
+            <a href="<?php echo $data_nav_db['link']; ?>"><div class="header"><?php echo $data_nav_db['header']; ?></div></a>
+           <?php } ?>
+            <!-- <div class="icon-social"><?php echo $data['icon']; ?></div> -->
+        </div>
+</div>

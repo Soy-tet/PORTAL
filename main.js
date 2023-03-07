@@ -32,3 +32,13 @@ function outcome() {
   xhttp.open("GET", "./PHP/outcome/outcome.php"); 
   xhttp.send();
 }
+function notePad() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("note_pad").innerHTML =
+    xhttp.responseText;
+  }
+  xhttp.open("GET", "./note_page.php");
+  xhttp.send();
+}
+alert('hello');

@@ -11,12 +11,14 @@ if(isset($_POST["name"])){
 			$chackRef = $_GET['ref'];
 			$userid = $_GET["userid"];
 			 $sql = "UPDATE `pano` SET `image`= '$image', `name`= '$name' WHERE id='$userid';";
+			 mysqli_query($connection, $sql);
 			if(!isset($chackRef)){
-				header('location: /PORTAL/PORTAL/index.php');
+				header('location: ../../../index.php');
 			}else{
 				header('location: '.$_GET['ref']);
 			}
 }
+// include('../../../index.php');
 else{
     $message = "please fill in blank";
 }
@@ -43,13 +45,6 @@ $data7 = mysqli_fetch_assoc($query7);
 		<div class="login-content">
 			<form method="post">
 				<div class="insert_icon">
-					<!-- <script>
-						function insertIMG(){
-							var x = getElementById('img_url');
-							x.style.position="absolute";
-							return x ;
-						}
-					</script> -->
 					<i onclick="insertIMG()" class="fa-solid fa-user-plus"></i>
 					<h2 class="title">Updata Data</h2>
 				</div>

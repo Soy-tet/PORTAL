@@ -10,8 +10,10 @@
             }
             $result2 = mysqli_query($connection_lesson2,"SELECT * FROM `Profile`;");
             $data_nav = mysqli_query($connection,"SELECT * FROM `navbar`;");
-            // if(!isset($_COOKIE['username'])){
-            //     header("Location: ./login.php");
-            //     exit();
-            // }
+            $pano_homepage = mysqli_query($connection,"SELECT * FROM `pano` WHERE `id` = 1;");
+            $data_homepage = mysqli_fetch_assoc($pano_homepage);
+            $pano_note = mysqli_query($connection,"SELECT * FROM `pano` WHERE `id` = 2;");
+            $data_note = mysqli_fetch_assoc($pano_note);
+            $pano_outcome = mysqli_query($connection,"SELECT * FROM `pano` WHERE `id` = 3;");
+            $data_outcome = mysqli_fetch_assoc($pano_outcome);
 ?>

@@ -1,7 +1,7 @@
 <div class="container_center">
             <div class="scroll">
                 <div class="pano_content">
-                    <img src="https://aitsrajampet.ac.in/images/pdf/ai/Artificial-Intelligence-and-Machine-Learning.png" alt="">
+                    <img src="<?php echo $data_homepage['image']; ?>" alt="">
                     <a href="\PORTAL\PORTAL\Dashboard\SQL\INSERT\Clone\team.php"><button class="button-38" role="button">Being Leadership</button></a>
                 </div>
                 <h4 class="suggestion" style="font-size: small;">Recommendation</h4>

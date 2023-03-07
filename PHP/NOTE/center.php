@@ -1,7 +1,7 @@
-<div class="container_center">
+<div class="container_center" id="note_pad">
             <div class="scroll">
                 <div class="pano_content">
-                    <img src="https://c4.wallpaperflare.com/wallpaper/1008/896/1021/simple-background-digital-art-books-magic-wallpaper-preview.jpg" alt="">
+                  <img src="<?php echo $data_note['image']; ?>" alt="">
                     <a href="/PORTAL/PORTAL/PHP/note_add/note_add.php"><button class="button-38" role="button">Let's add your note</button></a>
                 </div>
                 <div class="container_team">
@@ -13,11 +13,12 @@
                   $result_note = mysqli_query($connection_note,"SELECT * FROM `note_book`;");
                while($row10 = mysqli_fetch_assoc($result_note)){
                 ?>  
-                    <div class="container_card_team">
+                <a href="/PORTAL/PORTAL/PHP/NOTE/NOTE_PAGE/note.php?userid=<?php echo $row10["id"]; ?>">  <div class="container_card_team">
                         <img src="<?php echo $row10['image']; ?>" alt="">
                         <p class="name_team"><?php echo $row10['note']; ?></p>
                         <p class="team_member">25,436k members</p>
                     </div>
+                </a>
                     <?php
                      } ?>
                      <div class="container_card_team">
